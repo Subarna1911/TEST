@@ -115,8 +115,7 @@ export default function Home() {
           {movies.map((movie) => (
             <MovieFetcher
               key={movie.id}
-              title={movie.title}
-              releaseDate={movie.release_date}
+              movie={movie}
             />
           ))}
         </div>
